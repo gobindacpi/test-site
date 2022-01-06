@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert New Record</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="form" align="center">
+<p><a href="dashboard.php">Dashboard</a> 
+| <a href="view.php">View Records</a> 
+| <a href="logout.php">Logout</a></p>
+<div>
+
+
+<h1>Insert New Record</h1>
+<form name="form" method="post" action=""> 
+<input type="hidden" name="new" value="1" />
+<table>
+    <tr>
+    <td>Project Name :</td>
+    <td><input type="text" name="projectname" required></td>
+   </tr>
+   <tr>
+    <td>SOF ID :</td>
+    <td><input type="text" name="sofid" required></td>
+   </tr>
+   <tr>
+    <td>Client Name :</td>
+    <td><input type="text" name="c-name" required></td>
+   </tr>
+     <tr>
+    <td>Client Email :</td>
+    <td><input type="text" name="c-email" required></td>
+   </tr>
+     <tr>
+    <td>Client Cell No :</td>
+    <td><input type="text" name="c-cell" required></td>
+   </tr>
+  <tr>
+    <td>Instance Name :</td>
+    <td><input type="text" name="i-name" required></td>
+   </tr>
+     <tr>
+    <td>Package Name :</td>
+	
+   <td>
+     <select name="Package-Name" style="width: 173px;" required>
+      <option selected hidden value="">Select PKG</option>
+
+<option value=" Standant-S4">Standant-S4</option>
+<option value=" Fastant-F8">Fastant-F8</option>
+<option value=" Computant-C64">Computant-C64</option>
+<option value=" VPN Connect-V1">VPN Connect-V1</option>
+<option value=" Standant-S2">Standant-S2</option>
+<option value=" Computant-C2">Computant-C2</option>
+<option value=" Tinant-t1">Tinant-t1</option>
+<option value=" Megant-M64">Megant-M64</option>
+<option value=" Computant-C32">Computant-C32</option>
+<option value=" Computant-C1">Computant-C1</option>
+<option value=" Computant-C4">Computant-C4</option>
+<option value=" Standant-S64">Standant-S64</option>
+<option value=" Standant-S8">Standant-S8</option>
+<option value=" Megant-M128">Megant-M128</option>
+<option value=" Megant-M256">Megant-M256</option>
+<option value=" Fastant-F32">Fastant-F32</option>
+<option value=" Megant-M16">Megant-M16</option>
+<option value=" Standant-S256">Standant-S256</option>
+<option value=" Fastant-F64">Fastant-F64</option>
+<option value=" Megant-M32">Megant-M32</option>
+<option value=" Computant-C16">Computant-C16</option>
+<option value=" Computant-C8">Computant-C8</option>
+<option value=" Standant-S16">Standant-S16</option>
+<option value=" Fastant-F16">Fastant-F16</option>
+<option value=" Fastant-F128">Fastant-F128</option>
+<option value=" Fastant-F4">Fastant-F4</option>
+<option value=" Standant-S128">Standant-S128</option>
+<option value=" Standant-S96">Standant-S96</option>
+<option value=" Megant-M8">Megant-M8</option>
+<option value=" Standant-S32">Standant-S32</option>
+
+    </select>
+    </td>
+	 	
+   </tr>
+
+    <tr>
+    <td>vCPU :</td>
+    <td><input type="text" name="cpu" required></td>
+   </tr>
+   <tr>
+    <td>RAM(GB) :</td>
+    <td><input type="text" name="ram" required></td>
+   </tr>
+     <tr>
+    <td>CEPH(GB) :</td>
+    <td><input type="text" name="ceph" required></td>
+   </tr>
+   
+     <tr>
+    <td>SSD(GB) :</td>
+    <td><input type="text" name="ssd" required></td>
+   </tr>
+
+   <tr>
+    <td>Operating System :</td>
+    <td>
+     <select name="OS-Name"   style="width: 173px;" required>
+      <option selected hidden value="">Select OS</option>
+      <option value="CentOS-7 (Cloud Base)">CentOS-7 (Cloud Base)</option>
+<option value="CentOS-7.6 (GUI+LVM)">CentOS-7.6 (GUI+LVM)</option>
+<option value="CentOS-7.6 (LVM)">CentOS-7.6 (LVM)</option>
+<option value="CentOS-7.6-LVM-Zimbra">CentOS-7.6-LVM-Zimbra</option>
+<option value="Centos-8.0-LVM">Centos-8.0-LVM</option>
+<option value="Centos6.8 LVM">Centos6.8 LVM</option>
+<option value="Cirros">Cirros </option>
+<option value="Debian-8.11-Image-Cloudbase">Debian-8.11-Image-Cloudbase </option>
+<option value="Debian-8.11-LVM">Debian-8.11-LVM </option>
+<option value="Debian-9.8.11-Image-Cloudbase">Debian-9.8.11-Image-Cloudbase </option>
+<option value="Fortigate-5.6">Fortigate-5.6 </option>
+<option value="Fortigate6.05">Fortigate6.05 </option>
+<option value="GOautodial-4-x86_64">GOautodial-4-x86_64 </option>
+<option value="Grasp-Windows-2016-VM-04-snmp">Grasp-Windows-2016-VM-04-snmp</option>
+<option value="Kaplan-MNP-Snapshot">Kaplan-MNP-Snapshot </option>
+<option value="OpenSuse42.3-LVM-IMAGE">OpenSuse42.3-LVM-IMAGE </option>
+<option value="Oracle">Oracle</option>
+<option value="Oracle-7-GUI-LVM">Oracle-7-GUI-LVM</option>
+<option value="Oracle-7.6">Oracle-7.6</option>
+<option value="Oracle-Linux-6.9-GUI-LVM">Oracle-Linux-6.9-GUI-LVM</option>
+<option value="PfSense-2.4.2">PfSense-2.4.2</option>
+<option value="Primary-Database-Server-BKP">Primary-Database-Server-BKP</option>
+<option value="Signaling-server-2-snap-Mishad">Signaling-server-2-snap-Mishad</option>
+<option value="UCS4.4">UCS4.4</option>
+<option value="Ubuntu-14.04-LVM">Ubuntu-14.04-LVM</option>
+<option value="Ubuntu-16.04-LVM">Ubuntu-16.04-LVM</option>
+<option value="Ubuntu-test-Snap">Ubuntu-test-Snap</option>
+<option value="Ubuntu16.04-Multi-LVM-DINGI">Ubuntu16.04-Multi-LVM-DINGI</option>
+<option value="Ubuntu18.04.LTS-LVM">Ubuntu18.04.LTS-LVM</option>
+<option value="Ubuntu18.4-NEW">Ubuntu18.4-NEW</option>
+<option value="Windows-2008R2-Standard-64bit">Windows-2008R2-Standard-64bit</option>
+<option value="Windows-Server-2012-R2 (Cloud Base)">Windows-Server-2012-R2 (Cloud Base)</option>
+<option value="Windows-Server-2012-R2-Standard (SPLA)">Windows-Server-2012-R2-Standard (SPLA)</option>
+<option value="Windows-Server-2016 (SPLA)">Windows-Server-2016 (SPLA)</option>
+<option value="Windows2012-OfficeNovotel-OS">Windows2012-OfficeNovotel-OS</option>
+<option value="Zimbra-Opt-Lvm-Image">Zimbra-Opt-Lvm-Image</option>
+<option value="cirros-image">cirros-image</option>
+<option value="kaplan-mnp-1">kaplan-mnp-1</option>
+<option value="mishad-test-image">mishad-test-image</option>
+<option value="nfs-mount-vm-snapshot">nfs-mount-vm-snapshot</option>
+<option value="openSUSE">openSUSE </option>
+<option value="osticket-snapshot">osticket-snapshot</option>
+<option value="seafile-fresh">seafile-fresh</option>
+<option value="seafile-fresh-after-install">seafile-fresh-after-install</option>
+<option value="seafile-fresh-after-install">seafile-fresh-after-install</option>
+<option value="sing-snapshot">sing-snapshot</option>
+<option value="ubuntu-16.04-custom-partition">ubuntu-16.04-custom-partition</option>
+
+
+ 
+
+   </select>
+    </td>
+   </tr>
+   </tr>
+   <tr>
+    <td>Private IP :</td>
+    <td><input type="text" name="pip" required></td>
+   </tr>
+   <tr>
+    <td>Floating IP :</td>
+    <td><input type="text" name="fip" required></td>
+   </tr>
+  
+   <tr>
+    <td>Launch Date :</td>
+    <td><input type="date" name="ldate" required></td>
+   </tr>
+
+<tr>
+    <td>AC Manager Name :</td>
+    <td>
+     <select name="acname" style="width: 173px;"  required>
+      <option selected hidden value="">Account Manager</option>
+       <option value="Khondokar Eftekharul Islam">Khondokar Eftekharul Islam</option>
+      <option value="Saqeb Ahmed">Saqeb Ahmed</option>
+      <option value="Anayetul Islam ">Anayetul Islam</option>
+      <option value="Md.Dalouear Hossain">Md.Dalouear Hossain</option>
+      <option value="Sifur Rahaman Bhuyan">Sifur Rahaman Bhuyan</option>
+      <option value="Anindya Barua">Anindya Barua</option> 
+
+    </select>
+    </td>
+   </tr>
+
+   <tr>
+    <td>Compute Node :</td>
+    <td>
+     <select name="cnode" required>
+      <option selected hidden value="">Compute Node</option>
+      <option value="compute1">compute1</option>
+      <option value="compute2">compute2</option>
+      <option value="compute3">compute3</option>
+      <option value="compute4">compute4</option>
+      <option value="compute5">compute5</option>
+      <option value="compute6">compute6</option>
+      <option value="compute7">compute7</option>
+      
+     </select>
+    </td>
+   </tr>
+    <tr>
+    <td>Client Type:</td>
+    <td>
+     <select name="cstatus" required>
+      <option selected hidden value="">Client Type</option>
+      <option value="Commercial">Commercial</option>
+      <option value="Test">Test</option>
+      <option value="Own Service">Own Service</option>
+      <option value="Terminated">Terminated</option>   
+     </select>
+    </td>
+   </tr>
+    <td><input name="submit" type="submit" value="Submit"></td>
+   </tr>
+  </table>
+</form>
+<p style="color:#FF0000;"><?php echo $status; ?></p>
+</div>
+</div>
+</body>
+</html>
+
